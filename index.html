@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="pfimagepf.png" class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Srivatsan H</span><br>from India</h1>  
+            </div>
+        </div>
+    </div>
+    <!-----About----->
+<div class="container">
+    <div class="row">
+            <div class="about-col-1">
+                <p><h1>SRIVATSAN H</h1></p>
+            </div>
+        <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm studing UG in Vel Tech High Tech Dr Rangarajan Dr Sakunthala Engineering College,
+                    I want to learn web Developement,Im interested in coding,Now attending the skill vertex internship.
+               </p>
+        </div>
+               <div class="tab-titles">
+                   <p class="tab-links active-link" onclick="opentab('Skills ')">Skills</p>
+                   <p class="tab-links active-link" onclick="opentab('Experience ')">Experience</p>
+                   <p class="tab-links active-link" onclick="opentab('Education ')">Education</p>
+                </div>
+            <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span><h2>WEB DEVELOPMENT</h2></span>Beginner in web designing</li>
+                        <li><span><h2>PYTHON PROGRAMMING</h2></span>Learning python Programming</li>
+                    </ul>
+            </div>              
+                <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023</span><br>Skill Vertex</li>
+                            <li><span>2022</span><br>Online Internship</li>
+                        </ul>
+                </div>
+                    <div class="tab-contents" id="Education">
+                            <ul>
+                            <li><span>2007-2021</span><br>LKG-12th in New Prince Mat Hr Sec School</li>
+                            <li><span>2021-current year</span><br>Studying my UG in Vel Tech High Tech </li>
+                            </ul>    
+                    </div>
+           </div>
+        </div>
+    </div>
+ </div>
+ <!---------services-------->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Developement</h2>
+                <p>learning in skill vertex</p>
+                <a href="#">Learn more</a> 
+            </div>
+            <div>
+                <h2>Python Programming</h2>
+                <p>learned in online internship
+                <a href="#">Learn more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!----portflio---->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work">
+        <img src="web development.jpg">
+          <div class="layer">
+            <h3>WEB DEVELOPEMENT</h3>
+            <P>This domain is used to build the webpage</P>
+          </div>
+    </div>
+        <div class="work">
+        <img src="python pic.jpg ">
+          <div class="layer">
+            <h3>PYTHON</h3>
+            <p>This app that uses to run the python code</p>
+          </div>
+        </div>
+    </div>
+ </div>
+<!-----contact----->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>srivasriva6427@gmail.com</p>
+                <p>7338922966</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a> 
+                </div>
+                <p>MY RESUME</p>
+                <p>CLICK HERE</p>
+                <a href="H SRIVATSAN resume.pdf.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">Summit</button>
+                </form>
+            </div>
+        </div>
+        <p>Copyright @ srivatsan</p>
+    </div>
+</div>
+<script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-links");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab ");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname)
+           }                
+ </script>
+</body>
+</html>
